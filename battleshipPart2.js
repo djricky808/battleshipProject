@@ -1,5 +1,5 @@
 const rs = require('readline-sync');
-let setShips
+let setShips;
 let finished = false;
 let x;
 let y;
@@ -115,7 +115,6 @@ function pickCoordinate() {
     for (y = 0; y < map.length; y++) {
         for (x = 0; x < map.length; x++) {
             if(map[y][x].includes(location)) {
-                console.log(map);
                 validLocation = true;
                 if(map[y][x].includes('O')) {
                     map[y][x].pop();
